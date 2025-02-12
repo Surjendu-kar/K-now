@@ -56,9 +56,8 @@ const AboutArea = () => {
                 <img
                   src={img_1}
                   alt="about-img"
+                  className="principal-image"
                   style={{
-                    height: "750px",
-                    width: "550px",
                     borderBottomRightRadius: "50%",
                     borderBottomLeftRadius: "50%",
                   }}
@@ -115,6 +114,15 @@ const AboutArea = () => {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        @media (min-width: 992px) {
+          .principal-image {
+            height: 750px;
+            width: 550px;
+          }
+        }
+      `}</style>
     </>
   );
 };

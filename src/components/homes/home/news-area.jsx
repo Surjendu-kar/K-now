@@ -18,7 +18,7 @@ const NewsArea = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row g-4">
             {blog_data.map((item) => (
               <div key={item.id} className="col-xl-4 col-md-6">
                 <div className="tp-blog mb-60">
@@ -52,7 +52,11 @@ const NewsArea = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="blog-btn text-center">
-                <Link href="/blog" className="tp-btn" style={{marginTop: "20px"}}>
+                <Link
+                  href="/blog"
+                  className="tp-btn"
+                  style={{ marginTop: "20px" }}
+                >
                   View All News
                 </Link>
               </div>

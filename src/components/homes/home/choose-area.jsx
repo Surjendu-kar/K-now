@@ -3,7 +3,6 @@ import React from "react";
 
 const choose_data = {
   bg_img: "/assets/img/bg/choose-img.jpg",
-
   experiences_years: "25",
   title: "Vision & Mission",
   sub_title: (
@@ -13,17 +12,35 @@ const choose_data = {
       Quality Education
     </>
   ),
-  des: "Our institution is committed to fostering academic excellence, innovation, and character development in a supportive learning environment.",
-
-  choose_list: [
-    { title: "Excellence in Academic Standards" },
-    { title: "Holistic Student Development" },
-    { title: "Innovation in Teaching Methods" },
+  vision:
+    "To be a premier institution that transforms students into leaders who shape tomorrow through excellence in education, innovation, and character.",
+  mission: "Our institution is committed to:",
+  mission_list: [
+    {
+      title:
+        "Excellence in Academic Standards through innovative teaching and research",
+    },
+    {
+      title:
+        "Holistic Student Development focusing on character, creativity, and critical thinking",
+    },
+    {
+      title:
+        "Creating a supportive learning environment that nurtures growth and innovation",
+    },
   ],
 };
 
-const { bg_img, experiences_years, title, sub_title, des, choose_list } =
-  choose_data;
+const {
+  bg_img,
+  experiences_years,
+  title,
+  sub_title,
+  vision,
+  mission,
+  mission_list,
+} = choose_data;
+
 const ChooseArea = () => {
   return (
     <>
@@ -36,14 +53,7 @@ const ChooseArea = () => {
           <div className="row align-items-center">
             <div className="col-xl-7 col-lg-6 col-md-6">
               <div className="tp-choose-img p-relative mb-30 ml-25">
-                <div
-                  className="image-container"
-                  style={{
-                    position: "relative",
-                    height: "750px",
-                    width: "550px",
-                  }}
-                >
+                <div className="image-container choose-image-container">
                   <img
                     src={bg_img}
                     alt="choose-img"
@@ -75,11 +85,26 @@ const ChooseArea = () => {
                 <div className="section-title mb-25">
                   <span className="tp-sub-title mb-25">{title}</span>
                   <h2 className="tp-section-title mb-20">{sub_title}</h2>
-                  <p>{des}</p>
+
+                  <div
+                    style={{ display: "flex", flexDirection: "column", gap: '30px' }}
+                  >
+                    {/* Vision Section */}
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <h4 className="vision-title">Vision</h4>
+                      <p>{vision}</p>
+                    </div>
+
+                    {/* Mission Section */}
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                      <h4 className="mission-title">Mission</h4>
+                      <p>{mission}</p>
+                    </div>
+                  </div>
                 </div>
                 <div className="tp-choose-list mb-35">
                   <ul>
-                    {choose_list.map((item, i) => (
+                    {mission_list.map((item, i) => (
                       <li key={i}>
                         <i className="fa-light fa-check"></i> {item.title}
                       </li>
@@ -96,6 +121,26 @@ const ChooseArea = () => {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        .choose-image-container {
+          position: relative;
+        }
+
+        @media (min-width: 992px) {
+          .choose-image-container {
+            height: 750px;
+            width: 550px;
+          }
+        }
+
+        .vision-title,
+        .mission-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #232323;
+        }
+      `}</style>
     </>
   );
 };

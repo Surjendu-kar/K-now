@@ -41,7 +41,7 @@
       margin-bottom: 5px;
     }
     @media #{$xs} {
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 5px;
     }
   }
@@ -58,7 +58,7 @@
       margin-bottom: 20px;
     }
     @media #{$xs} {
-      font-size: 30px;
+      font-size: 37px;
       line-height: 1.4;
       margin-bottom: 20px;
     }
@@ -73,14 +73,14 @@
     line-height: 1.7;
     margin-bottom: 55px;
     @media #{$xl} {
-      font-size: 16px;
+      font-size: 17px;
       margin-bottom: 40px;
     }
     @media #{$lg,$md} {
-      font-size: 14px;
+      font-size: 17px;
     }
     @media #{$xs} {
-      font-size: 15px;
+      font-size: 17px;
     }
     & br {
       @media #{$xs} {
@@ -175,8 +175,8 @@
     right: 0px;
   }
   @media #{$xl,$lg} {
-    right: -80px;
-    width: 650px;
+    right: 70px;
+    // width: 650px;
     height: auto;
   }
 }

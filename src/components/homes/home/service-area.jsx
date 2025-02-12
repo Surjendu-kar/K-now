@@ -44,7 +44,7 @@ const ServicesArea = () => {
             </div>
           </div>
           <div className="tp-feature-cn">
-            <div className="row">
+            <div className="row g-4">
               {feature_content.map((item) => (
                 <div key={item.id} className="col-xl-3 col-lg-6 col-md-6">
                   <div
