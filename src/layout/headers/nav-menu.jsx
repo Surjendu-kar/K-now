@@ -7,15 +7,17 @@ const NavMenu = () => {
     <>
       <ul>
         {menu_data.map((item) => (
-          <li key={item.id} className="has-dropdown">
+          <li key={item.id} className={item.has_dropdown ? "has-dropdown" : ""}>
             <Link href={item.link}>{item.title}</Link>
-            <ul className="submenu">
-              {item.sub_menus.map((sub, i) => (
-                <li key={i}>
-                  <Link href={sub.link}>{sub.title}</Link>
-                </li>
-              ))}
-            </ul>
+            {item.has_dropdown && (
+              <ul className="submenu">
+                {item.sub_menus.map((sub, i) => (
+                  <li key={i}>
+                    <Link href={sub.link}>{sub.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

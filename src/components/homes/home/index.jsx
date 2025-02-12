@@ -1,32 +1,24 @@
 import React from "react";
 import AboutArea from "./about-area";
-import CategoryArea from "./category-area";
 import ChooseArea from "./choose-area";
 import CounterArea from "../../../common/counter-area";
-import CourseArea from "./course-area";
-import FeatureArea from "./feature-area";
 import HeroBanner from "./hero-banner";
-import InstructorArea from "../../../common/instructor-area";
-import SuitableArea from "../../../common/suitable-area";
-import TestimonialArea from "./testimonial-area";
-import BlogArea from "./blog-area";
-import BrandArea from "../../../common/brand-area";
+import NewsArea from "./news-area";
+import ServicesArea from "./service-area";
 
 const Home = () => {
   return (
     <>
       <HeroBanner />
-      <FeatureArea />
+      {/* Princiapls Message */}
       <AboutArea />
-      <CategoryArea />
-      <CourseArea />
+      {/* Vision mission */}
       <ChooseArea />
       <CounterArea />
-      <InstructorArea />
-      <SuitableArea />
-      <TestimonialArea />
-      <BlogArea />
-      <BrandArea style_1={true} />
+      {/* News & Achievements */}
+      <NewsArea />
+      {/* Our Latest services */}
+      <ServicesArea />
     </>
   );
 };

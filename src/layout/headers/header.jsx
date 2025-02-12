@@ -62,7 +62,7 @@ const {sticky} = useSticky()
                     </nav>
                   </div>
                   <div className="header-right d-md-flex align-items-center">
-                    <div className="header__search d-none d-lg-block">
+                    {/* <div className="header__search d-none d-lg-block">
                       <form onSubmit={e => e.preventDefault()}>
                         <div className="header__search-input">
                           <button className="header__search-btn">
@@ -71,10 +71,10 @@ const {sticky} = useSticky()
                           <input type="text" placeholder="Search Courses" />
                         </div>
                       </form>
-                    </div>
+                    </div> */}
                     <div className="header-meta">
                       <ul>
-                        <li>
+                        {/* <li>
                           <Link href="/sign-in" className="d-none d-md-block">
                             <i className="fi fi-rr-user"></i>
                           </Link>
@@ -83,7 +83,7 @@ const {sticky} = useSticky()
                           <Link href="/cart" className="d-none d-md-block">
                             <i className="fi fi-rr-shopping-bag"></i>
                           </Link>
-                        </li>
+                        </li> */}
                         <li>
                           <a onClick={() => setIsActive(true)}  href="#" className="tp-menu-toggle d-xl-none">
                             <i className="icon_ul"></i>

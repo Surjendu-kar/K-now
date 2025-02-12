@@ -2,22 +2,23 @@ import Link from "next/link";
 import React from "react";
 
 const choose_data = {
-  bg_img: "/assets/img/bg/choose-img-01.jpg",
-  experiences_years: "23",
-  title: "Why Choose Us",
+  bg_img: "/assets/img/bg/choose-img.jpg",
+
+  experiences_years: "25",
+  title: "Vision & Mission",
   sub_title: (
     <>
-      Why You Choose Our
+      Empowering Futures Through
       <br />
-      E-Pora Online learning
+      Quality Education
     </>
   ),
-  des: 'Dramatically supply transparent deliverables before & can backward comp internal or "organic" sources.',
+  des: "Our institution is committed to fostering academic excellence, innovation, and character development in a supportive learning environment.",
 
   choose_list: [
-    { title: "Increasing Your Learning Skills" },
-    { title: "High Quality Video & Audio Classes" },
-    { title: "Finish Your Course, Get Certificate" },
+    { title: "Excellence in Academic Standards" },
+    { title: "Holistic Student Development" },
+    { title: "Innovation in Teaching Methods" },
   ],
 };
 
@@ -35,7 +36,26 @@ const ChooseArea = () => {
           <div className="row align-items-center">
             <div className="col-xl-7 col-lg-6 col-md-6">
               <div className="tp-choose-img p-relative mb-30 ml-25">
-                <img src={bg_img} alt="choose-img" />
+                <div
+                  className="image-container"
+                  style={{
+                    position: "relative",
+                    height: "750px",
+                    width: "550px",
+                  }}
+                >
+                  <img
+                    src={bg_img}
+                    alt="choose-img"
+                    style={{
+                      height: "100%",
+                      width: "100%",
+                      objectFit: "cover",
+                      clipPath:
+                        "polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 80%)",
+                    }}
+                  />
+                </div>
                 <div className="tpchoose-img-text d-none d-md-block">
                   <ul>
                     <li>
@@ -44,7 +64,7 @@ const ChooseArea = () => {
                     </li>
                     <li>
                       <i className="fa-light fa-check"></i>
-                      <p>Fully Safe & Secure</p>
+                      <p>NAAC Accredited</p>
                     </li>
                   </ul>
                 </div>
@@ -54,12 +74,8 @@ const ChooseArea = () => {
               <div className="tp-choose-content mb-30">
                 <div className="section-title mb-25">
                   <span className="tp-sub-title mb-25">{title}</span>
-                  <h2 className="tp-section-title mb-20">
-                   {sub_title}
-                  </h2>
-                  <p>
-                    {des}
-                  </p>
+                  <h2 className="tp-section-title mb-20">{sub_title}</h2>
+                  <p>{des}</p>
                 </div>
                 <div className="tp-choose-list mb-35">
                   <ul>

@@ -22,16 +22,24 @@ const shape_img = [
 
 // about info
 const about_info = {
-    img_1: "/assets/img/about/about-img.png",
-    img_2: "/assets/img/about/about-shape-01.png",
-    img_3: "/assets/img/about/about-shape-02.png",
-    about_title: "About Our Courses",
-    sub_title:"Explore Thousands of Creative Classes.",
-    des: <>Dramatically supply transparent deliverables beforese backward comp internal or "organic" sources. Comp  transparent leverage other.</>,
-    about_btn: "Read More"
-}
+  img_1: "/assets/img/about/about-1.jpg",
+  img_2: "/assets/img/about/about-2.jpg",
+  img_3: "/assets/img/about/about-3.png",
+  about_title: "Principal's Message",
+  sub_title: "Nurturing Minds, Building Futures",
+  des: (
+    <>
+      As the Principal of this institution, I am proud to lead a community
+      dedicated to academic excellence and personal growth. Our commitment goes
+      beyond traditional education – we strive to develop well-rounded
+      individuals ready for tomorrow's challenges.
+    </>
+  ),
+  about_btn: "Learn More",
+};
 
-const {img_1, img_2, img_3, about_title, sub_title, des, about_btn} = about_info
+const { img_1, img_2, img_3, about_title, sub_title, des, about_btn } =
+  about_info;
 
 const AboutArea = () => {
   return (
@@ -45,7 +53,16 @@ const AboutArea = () => {
           <div className="row align-items-center">
             <div className="col-xxl-7 col-xl-6 col-lg-6 col-md-6">
               <div className="tp-about-img p-relative pb-30 ml-10">
-                <img src={img_1} alt="about-img" />
+                <img
+                  src={img_1}
+                  alt="about-img"
+                  style={{
+                    height: "750px",
+                    width: "550px",
+                    borderBottomRightRadius: "50%",
+                    borderBottomLeftRadius: "50%",
+                  }}
+                />
                 <div className="tp-about-line-shape d-none d-md-block">
                   {shape_img.map((item) => (
                     <img
@@ -55,18 +72,28 @@ const AboutArea = () => {
                       className={item.cls}
                     />
                   ))}
-                
                 </div>
                 <div className="tp-about-shape  d-none d-xl-block">
                   <img
                     src={img_2}
                     alt="about-shape"
                     className="a-shape-one"
+                    style={{
+                      height: "200px",
+                      borderTopLeftRadius: "50%",
+                      borderTopRightRadius: "50%",
+                      rotate: "-10deg",
+                    }}
                   />
                   <img
                     src={img_3}
                     alt="about-shape"
                     className="a-shape-two"
+                    style={{
+                      height: "220px",
+                      width: "220px",
+                      borderRadius: "100%",
+                    }}
                   />
                 </div>
               </div>
@@ -75,12 +102,8 @@ const AboutArea = () => {
               <div className="tp-about-content pb-30 ml-80">
                 <div className="section-title mb-55">
                   <span className="tp-sub-title mb-20">{about_title}</span>
-                  <h2 className="tp-section-title mb-15">
-                   {sub_title}
-                  </h2>
-                  <p>
-                    {des}
-                  </p>
+                  <h2 className="tp-section-title mb-15">{sub_title}</h2>
+                  <p>{des}</p>
                 </div>
                 <div className="about-btn">
                   <Link href="/about" className="tp-btn">
