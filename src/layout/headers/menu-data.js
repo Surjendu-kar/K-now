@@ -2,7 +2,7 @@ const menu_data = [
   {
     id: 1,
     title: "Home",
-    link: "/",
+    link: "#",
     has_dropdown: true,
     sub_menus: [
       { link: "/", title: "Home Style 1" },
@@ -13,7 +13,7 @@ const menu_data = [
   {
     id: 2,
     title: "About",
-    link: "/about",
+    link: "#",
     has_dropdown: true,
     sub_menus: [
       { link: "/about", title: "About Us" },
@@ -27,7 +27,7 @@ const menu_data = [
   {
     id: 3,
     title: "Administration",
-    link: "/administration",
+    link: "#",
     has_dropdown: true,
     sub_menus: [
       { link: "/staff-details", title: "Staff Details" },
@@ -41,7 +41,7 @@ const menu_data = [
   {
     id: 4,
     title: "Academics",
-    link: "/academics",
+    link: "#",
     has_dropdown: true,
     sub_menus: [
       { link: "/school-curriculum", title: "School Curriculum" },
@@ -54,7 +54,7 @@ const menu_data = [
   {
     id: 5,
     title: "More",
-    link: "/more",
+    link: "#",
     has_dropdown: true,
     sub_menus: [
       { link: "/co-curricular-activities", title: "Co Curricular Activities" },
@@ -70,14 +70,14 @@ const menu_data = [
     id: 6,
     title: "Gallery",
     link: "/gallery",
-    has_dropdown: false
+    has_dropdown: false,
   },
   {
     id: 7,
     title: "Contact Us",
     link: "/contact",
-    has_dropdown: false
-  }
+    has_dropdown: false,
+  },
 ];
 
 export default menu_data;
