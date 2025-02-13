@@ -1,0 +1,64 @@
+{
+  "cbseActivities": [
+    {
+      "id": 1,
+      "name": "Heritage India Quiz",
+      "category": "Academic",
+      "coordinator": "Mrs. Meena Sharma",
+      "eligibility": "Classes 9-12",
+      "venue": "School Auditorium",
+      "type": "Competition",
+      "level": "National",
+      "maxParticipants": 4,
+      "date": "2025-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Expression Series",
+      "category": "Creative Writing",
+      "coordinator": "Mr. Arun Kumar",
+      "eligibility": "Classes 6-12",
+      "venue": "Classrooms",
+      "type": "Competition",
+      "level": "National",
+      "maxParticipants": "Individual",
+      "date": "2025-01-16"
+    },
+    {
+      "id": 3,
+      "name": "Science Exhibition",
+      "category": "Science",
+      "coordinator": "Dr. Amit Gupta",
+      "eligibility": "Classes 6-12",
+      "venue": "School Ground",
+      "type": "Exhibition",
+      "level": "Regional",
+      "maxParticipants": 2,
+      "date": "2025-01-17"
+    },
+    {
+      "id": 4,
+      "name": "Fit India Movement",
+      "category": "Sports",
+      "coordinator": "Mr. Rajesh Singh",
+      "eligibility": "All Classes",
+      "venue": "Sports Ground",
+      "type": "Movement",
+      "level": "National",
+      "maxParticipants": "All Students",
+      "date": "2025-01-18"
+    },
+    {
+      "id": 5,
+      "name": "Reading Challenge",
+      "category": "Literary",
+      "coordinator": "Mrs. Priya Verma",
+      "eligibility": "Classes 3-12",
+      "venue": "School Library",
+      "type": "Competition",
+      "level": "School",
+      "maxParticipants": "Individual",
+      "date": "2025-01-19"
+    }
+  ]
+}
