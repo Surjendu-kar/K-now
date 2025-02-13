@@ -8,7 +8,7 @@ export const CurricularCard = ({ item }) => {
           <div className="tpcourse__thumb p-relative w-img fix">
             <Link href={`/co-curricular-activities/${item.id}`}>
               <img
-                src="../../../public/assets/img/course/course-sub-thumb-02.jpg"
+                src="/assets/img/course/course-sub-thumb-02.jpg"
                 alt="curricular-thumb"
               />
             </Link>

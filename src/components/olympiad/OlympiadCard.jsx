@@ -8,7 +8,7 @@ export const OlympiadCard = ({ item }) => {
           <div className="tpcourse__thumb p-relative w-img fix">
             <Link href={`/olympiads/${item.id}`}>
               <img
-                src="/assets/img/courses/course-thumb-01.jpg"
+                src="/assets/img/course/course-sub-thumb-04.jpg"
                 alt="course-thumb"
               />
             </Link>

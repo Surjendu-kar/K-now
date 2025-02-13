@@ -8,7 +8,7 @@ export const AchievementCard = ({ item }) => {
           <div className="tpcourse__thumb p-relative w-img fix">
             <Link href={`/achievements/${item.id}`}>
               <img
-                src="/assets/img/courses/course-thumb-01.jpg"
+                src="/assets/img/course/course-sub-thumb-03.jpg"
                 alt="course-thumb"
               />
             </Link>
