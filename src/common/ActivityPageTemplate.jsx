@@ -1,15 +1,10 @@
-import co_curricular_activities from "@/src/data/co_curricular_activities.json";
 import { useDispatch, useSelector } from "react-redux";
-import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { CommonSort } from "./CommonSort";
+import { getSortedData } from "./sortUtils";
 import { addPerPage, addSort } from "@/features/activityFilter";
-import { CommonSort } from "@/src/common/CommonSort";
-import { getSortedData } from "@/src/common/sortUtils";
-import { useRouter } from "next/router";
-import BasicPagination from "@/src/common/BasicPagination";
 
-const CurricularActivityArea = () => {
-  const router = useRouter();
+const ActivityPageTemplate = ({ data, title }) => {
   const dispatch = useDispatch();
   const { activitySort } = useSelector((state) => state.activityFilter);
   const { sort, perPage } = activitySort;
@@ -17,13 +12,9 @@ const CurricularActivityArea = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(6);
 
-  const activitiesData = Array.isArray(co_curricular_activities)
-    ? co_curricular_activities
-    : co_curricular_activities.coCurricularActivities || [];
-
   const perPageHandler = (e) => {
     const value = JSON.parse(e.target.value);
-    const newItemsPerPage = value.end === 0 ? activitiesData.length : value.end;
+    const newItemsPerPage = value.end === 0 ? data.length : value.end;
     setItemsPerPage(newItemsPerPage);
     setCurrentPage(1);
     dispatch(
@@ -38,11 +29,11 @@ const CurricularActivityArea = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
-  const sortedData = getSortedData(activitiesData, sort, router.pathname);
+  const sortedData = getSortedData(data, sort, window.location.pathname);
   const filteredContent = sortedData.slice(indexOfFirstItem, indexOfLastItem);
 
   // Pagination handlers
-  const pages = Math.ceil(activitiesData.length / itemsPerPage);
+  const pages = Math.ceil(data.length / itemsPerPage);
   const getPaginationGroup = [...Array(pages)].map((_, i) => i + 1);
 
   const handleActive = (item) => {
@@ -89,9 +80,7 @@ const CurricularActivityArea = () => {
             </div>
           </div>
         </div>
-
         <div className="row mb-20">
-          {/* Sidebar */}
           <div className="col-lg-4 col-md-12 courser-list-width mb-60">
             <div className="course-sidebar">
               <div className="course-sidebar__widget mb-50">
@@ -104,8 +93,6 @@ const CurricularActivityArea = () => {
               </div>
             </div>
           </div>
-
-          {/* Main Content */}
           <div className="col-lg-8 col-md-12 course-item-width ml-30">
             {/* Top Bar */}
             <div className="shop-top-wrap courses-top-wrap mb-30">
@@ -117,11 +104,11 @@ const CurricularActivityArea = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex justify-content-center justify-content-md-end align-items-center">
-                    <div className="shop-top-right m-0 ms-md-auto">
+                    <div className="">
                       <select
                         value={sort}
                         name="orderby"
-                        className="orderby"
+                        className="chosen-single form-select ms-3"
                         onChange={(e) => dispatch(addSort(e.target.value))}
                       >
                         <option value="">Sort by (Latest First)</option>
@@ -161,7 +148,7 @@ const CurricularActivityArea = () => {
                     <div className="tpcourse__thumb p-relative w-img fix">
                       <Link href={`/co-curricular-activities/${item.id}`}>
                         <img
-                          src="/assets/img/courses/course-thumb-01.jpg"
+                          src="/assets/img/course/course-thumb-01.jpg"
                           alt="course-thumb"
                         />
                       </Link>
@@ -177,7 +164,7 @@ const CurricularActivityArea = () => {
                         </ul>
                       </div>
                       <div className="tpcourse__ava-title mb-15">
-                        <h4 className="tpcourse__title tp-cours-title-color">
+                        <h4 className="tpcourse__title">
                           <Link href={`/co-curricular-activities/${item.id}`}>
                             {item.activityName}
                           </Link>
@@ -204,7 +191,7 @@ const CurricularActivityArea = () => {
                               src="/assets/img/icon/c-meta-02.png"
                               alt="meta-icon"
                             />
-                            <span>{item.maxParticipants}</span>
+                            <span>{item.maxParticipants} students</span>
                           </li>
                         </ul>
                       </div>
@@ -224,14 +211,33 @@ const CurricularActivityArea = () => {
 
             {/* Pagination */}
             {pages > 1 && (
-              <BasicPagination
-                prev={prev}
-                currentPage={currentPage}
-                getPaginationGroup={getPaginationGroup}
-                next={next}
-                pages={pages}
-                handleActive={handleActive}
-              />
+              <div className="basic-pagination text-center">
+                <nav>
+                  <ul>
+                    <li>
+                      <a onClick={prev} style={{ cursor: "pointer" }}>
+                        <i className="far fa-angle-left"></i>
+                      </a>
+                    </li>
+                    {getPaginationGroup.map((item, index) => (
+                      <li key={index}>
+                        <a
+                          onClick={() => handleActive(item)}
+                          className={currentPage === item ? "current" : ""}
+                          style={{ cursor: "pointer" }}
+                        >
+                          {item}
+                        </a>
+                      </li>
+                    ))}
+                    <li>
+                      <a onClick={next} style={{ cursor: "pointer" }}>
+                        <i className="far fa-angle-right"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             )}
           </div>
         </div>
@@ -240,4 +246,4 @@ const CurricularActivityArea = () => {
   );
 };
 
-export default CurricularActivityArea;
+export default ActivityPageTemplate;
