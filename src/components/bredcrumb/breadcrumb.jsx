@@ -23,13 +23,23 @@ const Breadcrumb = ({ title, subtitle, isDbbl = "" }) => {
                 </span>
                 {isDbbl && (
                   <>
-                    <span className="sub-page-black">{isDbbl}</span>
+                    <span
+                      className="sub-page-black"
+                      style={{ textTransform: "capitalize" }}
+                    >
+                      {isDbbl}
+                    </span>
                     <span className="dvdr">
                       <i className="fa-regular fa-angle-right"></i>
                     </span>
                   </>
                 )}
-                <span className="sub-page-black">{subtitle}</span>
+                <span
+                  className="sub-page-black"
+                  style={{ textTransform: "capitalize" }}
+                >
+                  {subtitle}
+                </span>
               </div>
             </div>
           </div>

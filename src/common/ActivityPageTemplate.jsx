@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 import { CommonSort } from "./CommonSort";
 import { getSortedData } from "./sortUtils";
 import { addPerPage, addSort } from "@/features/activityFilter";
+import BasicPagination from "./BasicPagination";
+import { useRouter } from "next/router";
 
-const ActivityPageTemplate = ({ data, title }) => {
+const ActivityPageTemplate = ({ data, title, CardComponent }) => {
+  const router = useRouter();
   const dispatch = useDispatch();
   const { activitySort } = useSelector((state) => state.activityFilter);
   const { sort, perPage } = activitySort;
@@ -29,7 +32,7 @@ const ActivityPageTemplate = ({ data, title }) => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
-  const sortedData = getSortedData(data, sort, window.location.pathname);
+  const sortedData = getSortedData(data, sort, router.pathname);
   const filteredContent = sortedData.slice(indexOfFirstItem, indexOfLastItem);
 
   // Pagination handlers
@@ -67,16 +70,13 @@ const ActivityPageTemplate = ({ data, title }) => {
       data-wow-duration=".8s"
       data-wow-delay=".2s"
     >
-      <div className="container">
+      <div className="container" style={{ marginTop: "5rem" }}>
+        {/* heading */}
         <div className="row text-center">
           <div className="col-lg-12">
             <div className="section-title mb-60">
-              <span className="tp-sub-title-box mb-15">
-                Curricular Activity
-              </span>
-              <h2 className="tp-section-title">
-                Explore Our Curricular Activities
-              </h2>
+              <span className="tp-sub-title-box mb-15">{title}</span>
+              <h2 className="tp-section-title">Explore Our {title}</h2>
             </div>
           </div>
         </div>
@@ -85,9 +85,7 @@ const ActivityPageTemplate = ({ data, title }) => {
             <div className="course-sidebar">
               <div className="course-sidebar__widget mb-50">
                 <div className="course-sidebar__info c-info-list">
-                  <h4 className="course-sidebar__title mb-35">
-                    Sort Activities
-                  </h4>
+                  <h4 className="course-sidebar__title mb-35">Sort {title}</h4>
                   <CommonSort />
                 </div>
               </div>
@@ -142,102 +140,21 @@ const ActivityPageTemplate = ({ data, title }) => {
 
             {/* Activity List */}
             {filteredContent.map((item, i) => (
-              <div key={i} className="tpcourse tp-list-course mb-40">
-                <div className="row g-0">
-                  <div className="col-xl-4 course-thumb-width">
-                    <div className="tpcourse__thumb p-relative w-img fix">
-                      <Link href={`/co-curricular-activities/${item.id}`}>
-                        <img
-                          src="/assets/img/course/course-thumb-01.jpg"
-                          alt="course-thumb"
-                        />
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="col-xl-8 course-text-width">
-                    <div className="course-list-content">
-                      <div className="tpcourse__category mb-10">
-                        <ul className="tpcourse__price-list d-flex align-items-center">
-                          <li>
-                            <Link href="#">{item.category}</Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="tpcourse__ava-title mb-15">
-                        <h4 className="tpcourse__title">
-                          <Link href={`/co-curricular-activities/${item.id}`}>
-                            {item.activityName}
-                          </Link>
-                        </h4>
-                      </div>
-                      <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
-                        <ul className="d-flex align-items-center">
-                          <li>
-                            <img
-                              src="/assets/img/icon/c-meta-02.png"
-                              alt="meta-icon"
-                            />
-                            <span>{item.coordinator}</span>
-                          </li>
-                          <li>
-                            <img
-                              src="/assets/img/icon/c-meta-02.png"
-                              alt="meta-icon"
-                            />
-                            <span>{item.duration}</span>
-                          </li>
-                          <li>
-                            <img
-                              src="/assets/img/icon/c-meta-02.png"
-                              alt="meta-icon"
-                            />
-                            <span>{item.maxParticipants} students</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                        <div className="tpcourse__rating-icon">
-                          <span>{item.date}</span>
-                        </div>
-                        <div className="tpcourse__pricing">
-                          <h5 className="price-title">{item.venue}</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div key={i} className="col-12">
+                <CardComponent item={item} />
               </div>
             ))}
 
             {/* Pagination */}
             {pages > 1 && (
-              <div className="basic-pagination text-center">
-                <nav>
-                  <ul>
-                    <li>
-                      <a onClick={prev} style={{ cursor: "pointer" }}>
-                        <i className="far fa-angle-left"></i>
-                      </a>
-                    </li>
-                    {getPaginationGroup.map((item, index) => (
-                      <li key={index}>
-                        <a
-                          onClick={() => handleActive(item)}
-                          className={currentPage === item ? "current" : ""}
-                          style={{ cursor: "pointer" }}
-                        >
-                          {item}
-                        </a>
-                      </li>
-                    ))}
-                    <li>
-                      <a onClick={next} style={{ cursor: "pointer" }}>
-                        <i className="far fa-angle-right"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+              <BasicPagination
+                prev={prev}
+                currentPage={currentPage}
+                getPaginationGroup={getPaginationGroup}
+                next={next}
+                pages={pages}
+                handleActive={handleActive}
+              />
             )}
           </div>
         </div>
