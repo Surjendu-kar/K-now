@@ -24,24 +24,24 @@ const NewsArea = () => {
                 <div className="tp-blog mb-60">
                   <div className="tp-blog__thumb p-relative">
                     <div className="tp-blog__timg fix">
-                      <Link href="/news-details">
+                      <Link href={`/news/${item.id}`}>
                         <img src={item.img} alt="news-img" />
                       </Link>
                     </div>
                     <div className="tp-blog__icon">
-                      <Link href="/news-details">
+                      <Link href={`/news/${item.id}`}>
                         <i className="fi fi-rs-angle-right"></i>
                       </Link>
                     </div>
                   </div>
                   <div className="tp-blog__content">
                     <div className="tp-blog__meta mb-10">
-                      <Link href="/news-details">{item.category}</Link>{" "}
+                      <Link href={`/news/${item.id}`}>{item.category}</Link>{" "}
                       <span>-</span>
-                      <Link href="/news-details">{item.date}</Link>
+                      <Link href={`/news/${item.id}`}>{item.date}</Link>
                     </div>
                     <h3 className="tp-blog__title mb-15">
-                      <Link href="/news-details">{item.title}</Link>
+                      <Link href={`/news/${item.id}`}>{item.title}</Link>
                     </h3>
                     <p>{item.des}</p>
                   </div>

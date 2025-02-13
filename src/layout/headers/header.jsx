@@ -1,28 +1,35 @@
 import useSticky from "@/hooks/use-sticky";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import NavMenu from "./nav-menu";
 import Sidebar from "./sidebar";
-
+import { usePathname } from "next/navigation";
 
 // category_data
 const category_data = [
-  {title: "Bangla Medium"},
-  {title: "English Medium"},
-  {title: "Video Edition"},
-  {title: "Logo Design"},
-  {title: "Francy Medium"},
-
-]
+  { title: "Bangla Medium" },
+  { title: "English Medium" },
+  { title: "Video Edition" },
+  { title: "Logo Design" },
+  { title: "Francy Medium" },
+];
 const Header = () => {
-const {sticky} = useSticky()
   const [isActive, setIsActive] = useState(false);
+  const pathname = usePathname();
+
+  // Only apply sticky if not on home page
+  const shouldBeSticky = pathname !== "/";
 
   return (
     <>
       <header className="header__transparent ">
         <div className="header__area">
-          <div className={`main-header header-xy-spacing ${sticky ? "header-sticky" : ""}`} id="header-sticky">
+          <div
+            className={`main-header header-xy-spacing ${
+              shouldBeSticky ? "header-sticky" : ""
+            }`}
+            id="header-sticky"
+          >
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-6">
@@ -37,17 +44,17 @@ const {sticky} = useSticky()
                         <ul>
                           <li>
                             <a href="#">
-                              Categorie {" "}
+                              Categorie{" "}
                               <span>
                                 <i className="arrow_carrot-down"></i>
                               </span>
                             </a>
                             <ul className="sub-menu">
-                              {category_data.map((item, i) => 
-                               <li key={i}>
-                               <Link href="/course-grid">{item.title}</Link>
-                             </li>
-                              )}
+                              {category_data.map((item, i) => (
+                                <li key={i}>
+                                  <Link href="/course-grid">{item.title}</Link>
+                                </li>
+                              ))}
                             </ul>
                           </li>
                         </ul>
@@ -85,7 +92,11 @@ const {sticky} = useSticky()
                           </Link>
                         </li> */}
                         <li>
-                          <a onClick={() => setIsActive(true)}  href="#" className="tp-menu-toggle d-xl-none">
+                          <a
+                            onClick={() => setIsActive(true)}
+                            href="#"
+                            className="tp-menu-toggle d-xl-none"
+                          >
                             <i className="icon_ul"></i>
                           </a>
                         </li>

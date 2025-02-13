@@ -7,7 +7,7 @@ import PostboxBlogDetails from "./postbox-blog-details";
 const BlogDetails = () => {
   return (
     <>
-      <Breadcrumb title="Blog Details" subtitle="Blog Details" isDbbl="Blog" />
+      <Breadcrumb title="News Details" subtitle="News Details" isDbbl="News" />
       <PostboxBlogDetails />
       <CounterArea />
     </>

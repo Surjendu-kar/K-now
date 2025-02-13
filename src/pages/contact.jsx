@@ -1,14 +1,14 @@
 import React from "react";
 import SEO from "../common/seo";
 import Contact from "../components/contact";
-import WrapperFour from "../layout/wrapper-4";
+import Wrapper from "../layout/wrapper";
 
 const index = () => {
   return (
-    <WrapperFour>
+    <Wrapper>
       <SEO pageTitle={"Contact"} />
       <Contact />
-    </WrapperFour>
+    </Wrapper>
   );
 };
 
