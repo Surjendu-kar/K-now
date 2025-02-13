@@ -12,6 +12,7 @@
       "achievements": "State Level Champions 2024",
       "maxPlayers": 25,
       "timing": "4:00 PM - 6:00 PM",
+      "ct_color": "c-color-green",
       "date": "2025-01-15"
     },
     {
@@ -26,6 +27,7 @@
       "achievements": "District Champions 2024",
       "maxPlayers": 20,
       "timing": "3:30 PM - 5:30 PM",
+      "ct_color": "c-color-red",
       "date": "2025-01-16"
     },
     {
@@ -40,6 +42,7 @@
       "achievements": "Multiple State Medals",
       "maxPlayers": 40,
       "timing": "6:00 AM - 7:30 AM",
+      "ct_color": "c-color-blue",
       "date": "2025-01-17"
     },
     {
@@ -54,6 +57,7 @@
       "achievements": "Regional Champions",
       "maxPlayers": 16,
       "timing": "2:30 PM - 4:00 PM",
+      "ct_color": "c-color-purple",
       "date": "2025-01-18"
     },
     {
@@ -68,6 +72,7 @@
       "achievements": "State Level Medals",
       "maxPlayers": 30,
       "timing": "7:00 AM - 8:30 AM",
+      "ct_color": "c-color-blue",
       "date": "2025-01-19"
     },
     {
@@ -82,6 +87,7 @@
       "achievements": "Inter-school Champions",
       "maxPlayers": 25,
       "timing": "4:00 PM - 6:00 PM",
+      "ct_color": "c-color-yellow",
       "date": "2025-01-20"
     },
     {
@@ -96,6 +102,7 @@
       "achievements": "District Level Winners",
       "maxPlayers": 20,
       "timing": "3:00 PM - 4:30 PM",
+      "ct_color": "c-color-red",
       "date": "2025-01-21"
     },
     {
@@ -110,6 +117,7 @@
       "achievements": "Zonal Champions",
       "maxPlayers": 18,
       "timing": "4:30 PM - 6:00 PM",
+      "ct_color": "c-color-green",
       "date": "2025-01-22"
     },
     {
@@ -124,6 +132,7 @@
       "achievements": "National Youth Yoga Championship",
       "maxPlayers": 30,
       "timing": "7:30 AM - 8:30 AM",
+      "ct_color": "c-color-blue",
       "date": "2025-01-23"
     },
     {
@@ -138,6 +147,7 @@
       "achievements": "State Chess Champions",
       "maxPlayers": 20,
       "timing": "2:30 PM - 4:00 PM",
+      "ct_color": "c-color-green",
       "date": "2025-01-24"
     }
   ]

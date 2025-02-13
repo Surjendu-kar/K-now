@@ -11,6 +11,7 @@
       "description": "First position in Senior Category",
       "recognizedBy": "International Mathematical Olympiad",
       "prize": "Gold Medal and Certificate",
+      "ct_color": "c-color-green",
       "mentors": ["Dr. Raman Sharma", "Mrs. Priya Verma"]
     },
     {
@@ -24,6 +25,7 @@
       "description": "Innovative project on renewable energy",
       "recognizedBy": "Ministry of Science and Technology",
       "prize": "Trophy and Cash Prize",
+      "ct_color": "c-color-red",
       "mentors": ["Dr. Amit Gupta"]
     },
     {
@@ -37,6 +39,7 @@
       "description": "Champion in Under-15 category",
       "recognizedBy": "State Chess Association",
       "prize": "Trophy and Medal",
+      "ct_color": "c-color-blue",
       "mentors": ["Mr. Vivek Shah"]
     },
     {
@@ -50,6 +53,7 @@
       "description": "First prize in painting category",
       "recognizedBy": "National Art Academy",
       "prize": "Gold Medal and Certificate",
+      "ct_color": "c-color-yellow",
       "mentors": ["Ms. Deepika Patel"]
     },
     {
@@ -63,6 +67,7 @@
       "description": "Best Speaker Award",
       "recognizedBy": "Regional Education Board",
       "prize": "Trophy and Certificate",
+      "ct_color": "c-color-puple",
       "mentors": ["Mr. Arun Verma"]
     },
     {
@@ -76,6 +81,7 @@
       "description": "Research project on biodegradable plastics",
       "recognizedBy": "Science and Technology Department",
       "prize": "Medal and Research Grant",
+      "ct_color": "c-color-blue",
       "mentors": ["Dr. Suresh Patel"]
     },
     {
@@ -89,6 +95,7 @@
       "description": "First position in Bharatanatyam",
       "recognizedBy": "State Cultural Department",
       "prize": "Trophy and Certificate",
+      "ct_color": "c-color-yellow",
       "mentors": ["Mrs. Radha Krishna"]
     },
     {
@@ -102,6 +109,7 @@
       "description": "Developed innovative educational app",
       "recognizedBy": "Tech Education Forum",
       "prize": "Laptop and Certificate",
+      "ct_color": "c-color-green",
       "mentors": ["Ms. Neha Kapoor"]
     },
     {
@@ -115,6 +123,7 @@
       "description": "Project on water conservation",
       "recognizedBy": "Environmental Protection Board",
       "prize": "Trophy and Certificate",
+      "ct_color": "c-color-red",
       "mentors": ["Dr. Sunita Rao"]
     },
     {
@@ -128,6 +137,7 @@
       "description": "Best Young Parliamentarian",
       "recognizedBy": "Ministry of Youth Affairs",
       "prize": "Trophy and Certificate",
+      "ct_color": "c-color-green",
       "mentors": ["Prof. Rahul Singh"]
     }
   ]

@@ -8,8 +8,8 @@ export const CurricularCard = ({ item }) => {
           <div className="tpcourse__thumb p-relative w-img fix">
             <Link href={`/co-curricular-activities/${item.id}`}>
               <img
-                src="/assets/img/courses/course-thumb-01.jpg"
-                alt="course-thumb"
+                src="../../../public/assets/img/course/course-sub-thumb-02.jpg"
+                alt="curricular-thumb"
               />
             </Link>
           </div>
@@ -19,7 +19,9 @@ export const CurricularCard = ({ item }) => {
             <div className="tpcourse__category mb-10">
               <ul className="tpcourse__price-list d-flex align-items-center">
                 <li>
-                  <Link href="#">{item.category}</Link>
+                  <Link href="" className={item.ct_color}>
+                    {item.category}
+                  </Link>
                 </li>
               </ul>
             </div>

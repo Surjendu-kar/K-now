@@ -11,6 +11,7 @@
       "syllabus": "CBSE/ICSE Mathematics",
       "duration": "2 hours",
       "mode": "Offline",
+      "ct_color": "c-color-green",
       "coordinator": "Dr. Raman Sharma"
     },
     {
@@ -24,6 +25,7 @@
       "syllabus": "General Science",
       "duration": "2 hours",
       "mode": "Online",
+      "ct_color": "c-color-red",
       "coordinator": "Dr. Priya Verma"
     },
     {
@@ -37,6 +39,7 @@
       "syllabus": "English Language & Literature",
       "duration": "1.5 hours",
       "mode": "Offline",
+      "ct_color": "c-color-yellow",
       "coordinator": "Mrs. Sarah Matthews"
     },
     {
@@ -50,6 +53,7 @@
       "syllabus": "Computer Science & Programming",
       "duration": "3 hours",
       "mode": "Offline",
+      "ct_color": "c-color-blue",
       "coordinator": "Dr. Suresh Patel"
     },
     {
@@ -63,6 +67,7 @@
       "syllabus": "Advanced Chemistry",
       "duration": "2 hours",
       "mode": "Offline",
+      "ct_color": "c-color-purple",
       "coordinator": "Dr. Amit Gupta"
     },
     {
@@ -76,6 +81,7 @@
       "syllabus": "Advanced Physics",
       "duration": "3 hours",
       "mode": "Offline",
+      "ct_color": "c-color-green",
       "coordinator": "Dr. Rekha Patel"
     },
     {
@@ -89,6 +95,7 @@
       "syllabus": "Logical Reasoning & Mental Ability",
       "duration": "1.5 hours",
       "mode": "Online",
+      "ct_color": "c-color-yellow",
       "coordinator": "Mr. Arun Sharma"
     },
     {
@@ -102,6 +109,7 @@
       "syllabus": "Advanced Biology",
       "duration": "2 hours",
       "mode": "Offline",
+      "ct_color": "c-color-red",
       "coordinator": "Dr. Suresh Patel"
     },
     {
@@ -115,6 +123,7 @@
       "syllabus": "Economics & Current Affairs",
       "duration": "2 hours",
       "mode": "Online",
+      "ct_color": "c-color-green",
       "coordinator": "Dr. Manisha Gupta"
     },
     {
@@ -128,6 +137,7 @@
       "syllabus": "Environmental Science & Ecology",
       "duration": "1.5 hours",
       "mode": "Online",
+      "ct_color": "c-color-purple",
       "coordinator": "Dr. Sunita Rao"
     }
   ]

@@ -11,6 +11,7 @@
       "duration": "6 hours",
       "description": "Annual cultural celebration with performances",
       "dresscode": "Formal",
+      "ct_color": "c-color-red",
       "registrationRequired": true
     },
     {
@@ -24,6 +25,7 @@
       "duration": "2 days",
       "description": "Exhibition of student science projects",
       "dresscode": "School Uniform",
+      "ct_color": "c-color-blue",
       "registrationRequired": true
     },
     {
@@ -37,6 +39,7 @@
       "duration": "1 day",
       "description": "Annual sports competition",
       "dresscode": "Sports Uniform",
+      "ct_color": "c-color-green",
       "registrationRequired": true
     },
     {
@@ -50,6 +53,7 @@
       "duration": "Half day",
       "description": "Celebration to honor teachers",
       "dresscode": "Formal",
+      "ct_color": "c-color-purple",
       "registrationRequired": false
     },
     {
@@ -63,6 +67,7 @@
       "duration": "1 week",
       "description": "Week-long literary activities and competitions",
       "dresscode": "School Uniform",
+      "ct_color": "c-color-green",
       "registrationRequired": true
     },
     {
@@ -76,6 +81,7 @@
       "duration": "1 day",
       "description": "Career guidance and college counseling",
       "dresscode": "School Uniform",
+      "ct_color": "c-color-yellow",
       "registrationRequired": true
     },
     {
@@ -89,6 +95,7 @@
       "duration": "Half day",
       "description": "National day celebration",
       "dresscode": "School Uniform",
+      "ct_color": "c-color-green",
       "registrationRequired": false
     },
     {
@@ -102,6 +109,7 @@
       "duration": "4 hours",
       "description": "Monthly meeting with parents",
       "dresscode": "Formal",
+      "ct_color": "c-color-blue",
       "registrationRequired": true
     },
     {
@@ -115,6 +123,7 @@
       "duration": "3 days",
       "description": "Exhibition of student artwork",
       "dresscode": "School Uniform",
+      "ct_color": "c-color-purple",
       "registrationRequired": false
     },
     {
@@ -128,6 +137,7 @@
       "duration": "1 day",
       "description": "School foundation day celebration",
       "dresscode": "Formal",
+      "ct_color": "c-color-green",
       "registrationRequired": false
     }
   ]

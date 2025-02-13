@@ -19,7 +19,9 @@ export const SportsCard = ({ item }) => {
             <div className="tpcourse__category mb-10">
               <ul className="tpcourse__price-list d-flex align-items-center">
                 <li>
-                  <Link href="#">{item.category}</Link>
+                  <Link href="#" className={item.ct_color}>
+                    {item.category}
+                  </Link>
                 </li>
               </ul>
             </div>

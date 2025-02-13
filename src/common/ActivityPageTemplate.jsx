@@ -80,6 +80,7 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
             </div>
           </div>
         </div>
+
         <div className="row mb-20">
           <div className="col-lg-4 col-md-12 courser-list-width mb-60">
             <div className="course-sidebar">
@@ -91,6 +92,7 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
               </div>
             </div>
           </div>
+
           <div className="col-lg-8 col-md-12 course-item-width ml-30">
             {/* Top Bar */}
             <div className="shop-top-wrap courses-top-wrap mb-30">
@@ -101,13 +103,14 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex justify-content-center justify-content-md-end align-items-center">
-                    <div className="">
+                  <div className="d-flex justify-content-center justify-content-md-end align-items-center gap-2">
+                    <div>
                       <select
                         value={sort}
                         name="orderby"
                         className="chosen-single form-select ms-3"
                         onChange={(e) => dispatch(addSort(e.target.value))}
+                        style={{ cursor: "pointer" }}
                       >
                         <option value="">Sort by (Latest First)</option>
                         <option value="oldest">Oldest First</option>
@@ -118,6 +121,7 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
                         onChange={perPageHandler}
                         className="chosen-single form-select ms-3"
                         value={JSON.stringify(perPage)}
+                        style={{ cursor: "pointer" }}
                       >
                         <option value={JSON.stringify({ start: 0, end: 0 })}>
                           All

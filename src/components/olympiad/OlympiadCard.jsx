@@ -19,7 +19,9 @@ export const OlympiadCard = ({ item }) => {
             <div className="tpcourse__category mb-10">
               <ul className="tpcourse__price-list d-flex align-items-center">
                 <li>
-                  <Link href="#">{item.organizer}</Link>
+                  <Link href="#" className={item.ct_color}>
+                    {item.organizer}
+                  </Link>
                 </li>
               </ul>
             </div>

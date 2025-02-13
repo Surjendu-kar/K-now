@@ -11,7 +11,8 @@
       "venue": "Computer Lab",
       "duration": "2 hours",
       "requirements": "Basic programming knowledge",
-      "description": "Learn to build and program robots"
+      "description": "Learn to build and program robots",
+      "ct_color": "c-color-green"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "venue": "Auditorium",
       "duration": "1.5 hours",
       "requirements": "None",
-      "description": "Express creativity through theatrical performances"
+      "description": "Express creativity through theatrical performances",
+      "ct_color": "c-color-red"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "venue": "Science Lab",
       "duration": "2 hours",
       "requirements": "Interest in scientific experiments",
-      "description": "Conduct experiments and learn scientific concepts"
+      "description": "Conduct experiments and learn scientific concepts",
+      "ct_color": "c-color-yellow"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "venue": "Art Room",
       "duration": "1.5 hours",
       "requirements": "Basic art supplies",
-      "description": "Explore various art forms and crafts"
+      "description": "Explore various art forms and crafts",
+      "ct_color": "c-color-green"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "venue": "Conference Room",
       "duration": "1 hour",
       "requirements": "Good communication skills",
-      "description": "Develop argumentation and public speaking skills"
+      "description": "Develop argumentation and public speaking skills",
+      "ct_color": "c-color-blue"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "venue": "Music Room",
       "duration": "2 hours",
       "requirements": "Basic music knowledge",
-      "description": "Learn various musical instruments and vocal training"
+      "description": "Learn various musical instruments and vocal training",
+      "ct_color": "c-color-purple"
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "venue": "Photography Lab",
       "duration": "1.5 hours",
       "requirements": "Digital camera",
-      "description": "Learn photography techniques and photo editing"
+      "description": "Learn photography techniques and photo editing",
+      "ct_color": "c-color-red"
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "venue": "School Garden",
       "duration": "1 hour",
       "requirements": "None",
-      "description": "Promote environmental awareness and conservation"
+      "description": "Promote environmental awareness and conservation",
+      "ct_color": "c-color-green"
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "venue": "Activity Room",
       "duration": "1.5 hours",
       "requirements": "Basic chess knowledge",
-      "description": "Learn chess strategies and participate in tournaments"
+      "description": "Learn chess strategies and participate in tournaments",
+      "ct_color": "c-color-yellow"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "venue": "Computer Lab",
       "duration": "2 hours",
       "requirements": "Basic computer knowledge",
-      "description": "Learn programming languages and develop applications"
+      "description": "Learn programming languages and develop applications",
+      "ct_color": "c-color-blue"
     },
     {
       "id": 11,
@@ -141,7 +151,8 @@
       "venue": "Dance Studio",
       "duration": "2 hours",
       "requirements": "Dance shoes",
-      "description": "Learn various dance forms including classical and contemporary"
+      "description": "Learn various dance forms including classical and contemporary",
+      "ct_color": "c-color-green"
     },
     {
       "id": 12,
@@ -154,7 +165,8 @@
       "venue": "Library",
       "duration": "1.5 hours",
       "requirements": "None",
-      "description": "Explore creative writing, poetry, and literature"
+      "description": "Explore creative writing, poetry, and literature",
+      "ct_color": "c-color-red"
     },
     {
       "id": 13,
@@ -167,7 +179,8 @@
       "venue": "Sports Ground",
       "duration": "2 hours",
       "requirements": "Sports uniform",
-      "description": "Practice various sports and participate in tournaments"
+      "description": "Practice various sports and participate in tournaments",
+      "ct_color": "c-color-yellow"
     },
     {
       "id": 14,
@@ -180,7 +193,8 @@
       "venue": "Math Lab",
       "duration": "1.5 hours",
       "requirements": "Strong math foundation",
-      "description": "Prepare for mathematics competitions and olympiads"
+      "description": "Prepare for mathematics competitions and olympiads",
+      "ct_color": "c-color-puruple"
     },
     {
       "id": 15,
@@ -193,7 +207,8 @@
       "venue": "Conference Hall",
       "duration": "2 hours",
       "requirements": "Good research skills",
-      "description": "Simulate UN proceedings and develop diplomatic skills"
+      "description": "Simulate UN proceedings and develop diplomatic skills",
+      "ct_color": "c-color-red"
     },
     {
       "id": 16,
@@ -206,7 +221,8 @@
       "venue": "Yoga Room",
       "duration": "1 hour",
       "requirements": "Yoga mat",
-      "description": "Learn yoga asanas and meditation techniques"
+      "description": "Learn yoga asanas and meditation techniques",
+      "ct_color": "c-color-green"
     },
     {
       "id": 17,
@@ -219,7 +235,8 @@
       "venue": "Media Lab",
       "duration": "3 hours",
       "requirements": "Basic camera knowledge",
-      "description": "Learn film making, editing, and storytelling through video"
+      "description": "Learn film making, editing, and storytelling through video",
+      "ct_color": "c-color-blue"
     },
     {
       "id": 18,
@@ -232,7 +249,8 @@
       "venue": "Various Locations",
       "duration": "2 hours",
       "requirements": "None",
-      "description": "Engage in community service and social welfare activities"
+      "description": "Engage in community service and social welfare activities",
+      "ct_color": "c-color-red"
     },
     {
       "id": 19,
@@ -245,7 +263,8 @@
       "venue": "Observatory",
       "duration": "2 hours",
       "requirements": "None",
-      "description": "Study celestial bodies and astronomical phenomena"
+      "description": "Study celestial bodies and astronomical phenomena",
+      "ct_color": "c-color-purple"
     },
     {
       "id": 20,
@@ -258,7 +277,8 @@
       "venue": "Economics Lab",
       "duration": "1.5 hours",
       "requirements": "Basic economics knowledge",
-      "description": "Analyze economic trends and financial markets"
+      "description": "Analyze economic trends and financial markets",
+      "ct_color": "c-color-blue"
     }
   ]
 }
