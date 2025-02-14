@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { affiliationData } from "@/src/data/affiliation.json";
+import TableComponent from "@/src/common/TableComponent";
 
 function AffiliationArea() {
   const headerItems = [
@@ -26,75 +27,12 @@ function AffiliationArea() {
       data-wow-delay=".2s"
     >
       <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <div className="accordion" id="accordionExample">
-              {affiliationData.map((item, i) => (
-                <div key={i} className="accordion-items">
-                  <h2 className="accordion-header" id={`heading${item.id}`}>
-                    <button
-                      className="accordion-buttons collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target={`#collapse${item.id}`}
-                      aria-expanded="false"
-                      aria-controls={`collapse${item.id}`}
-                    >
-                      <div className="d-flex justify-content-between w-100">
-                        {headerItems.map((header, index) => (
-                          <span key={index} className="header-item">
-                            {item[header.key]}
-                          </span>
-                        ))}
-                      </div>
-                    </button>
-                  </h2>
-
-                  <div
-                    id={`collapse${item.id}`}
-                    className="accordion-collapse collapse"
-                    aria-labelledby={`heading${item.id}`}
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body">
-                      {expandedFields.map((field, index) => (
-                        <p key={index}>
-                          <strong>{field.label}: </strong>
-                          {field.key === "status" ? (
-                            <span
-                              className={`badge ${
-                                item[field.key] === "Active"
-                                  ? "bg-success"
-                                  : "bg-warning"
-                              }`}
-                            >
-                              {item[field.key]}
-                            </span>
-                          ) : (
-                            item[field.key]
-                          )}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <TableComponent
+          data={affiliationData}
+          headerItems={headerItems}
+          expandedFields={expandedFields}
+        />
       </div>
-
-      <style jsx>{`
-        .header-item {
-          flex: 1;
-          padding: 0 10px;
-        }
-
-        .badge {
-          padding: 5px 10px;
-          border-radius: 4px;
-        }
-      `}</style>
     </section>
   );
 }
