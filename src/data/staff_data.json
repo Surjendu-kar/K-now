@@ -17,7 +17,7 @@
       "id": 2,
       "name": "Priya Sharma",
       "designation": "Mathematics Teacher",
-      "image": "/assets/img/staff/staff-13.jpg",
+      "image": "/assets/img/staff/staff-12.jpg",
       "shape": {
         "backgroundColor": "#E4FFE2",
         "borderRadius": "135px 115px 115px 0"
@@ -30,7 +30,7 @@
       "id": 3,
       "name": "Amit Patel",
       "designation": "Chemistry Teacher",
-      "image": "/assets/img/staff/staff-10.jpg",
+      "image": "/assets/img/staff/staff-14.jpg",
       "shape": {
         "backgroundColor": "#E8EDFF",
         "borderRadius": "0 135px 0 0"
