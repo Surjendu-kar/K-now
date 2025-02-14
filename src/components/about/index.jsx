@@ -3,9 +3,11 @@ import Breadcrumb from "../bredcrumb/breadcrumb";
 import { staffMembers } from "@/src/data/staff_data.json";
 import Link from "next/link";
 import ChooseArea from "../homes/home/choose-area";
+import { committeeMembers } from "@/src/data/committee_members.json";
 
 const About = () => {
   const topStaff = staffMembers.slice(0, 3);
+  const topCommitteeMembers = committeeMembers.slice(0, 3);
 
   return (
     <>
@@ -246,6 +248,73 @@ const About = () => {
                       <span>{item.designation}</span>
                       <h4 className="tp-instructor__title tp-instructor__title-info p-relative mb-35 mt-5">
                         <Link href={`/staff/${item.id}`}>{item.name}</Link>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* School Committee Section */}
+      <section className="instructor-area pb-110">
+        <div className="container">
+          <div className="section__title-wrap mb-55">
+            <div className="row align-items-center gap-4 gap-md-0">
+              <div className="col-md-8">
+                <div className="section__title text-center text-md-start">
+                  <span className="sub-title">School Committee</span>
+                  <h2 className="title tg-svg">
+                    School{" "}
+                    <span className="position-relative">
+                      <span
+                        className="svg-icon"
+                        id="svg-8"
+                        data-svg-icon="assets/img/icons/title_shape.svg"
+                      />
+                      Committee
+                    </span>
+                  </h2>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="tp-about-btn-3 justify-content-center justify-content-md-end d-flex">
+                  <Link href="/school-comittee" className="tp-btn">
+                    View All Members
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            {committeeMembers.slice(0, 3).map((item, i) => (
+              <div key={i} className="col-lg-4 col-md-6 col-12">
+                <div
+                  className="tp-instruc-item wow fadeInUp"
+                  data-wow-duration=".8s"
+                  data-wow-delay=".2s"
+                >
+                  <div className="tp-instructor text-center p-relative mb-40">
+                    <div className="tp-instructor__thumb mb-25">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        style={{
+                          width: "100%",
+                          height: "500px",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+                    <div className="tp-instructor__content">
+                      <span>{item.role}</span>
+                      <h4 className="tp-instructor__title tp-instructor__title-info p-relative mb-35 mt-5">
+                        <Link href={`/school-comittee/${item.id}`}>
+                          {item.name}
+                        </Link>
                       </h4>
                     </div>
                   </div>
