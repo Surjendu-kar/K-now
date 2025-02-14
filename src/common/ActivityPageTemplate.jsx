@@ -142,12 +142,14 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
               </div>
             </div>
 
-            {/* Activity List */}
-            {filteredContent.map((item, i) => (
-              <div key={i} className="col-12">
-                <CardComponent item={item} />
-              </div>
-            ))}
+            {/* Activity List - Change this part in ActivityPageTemplate */}
+            <div className="row g-4">
+              {" "}
+              {/* Single row wrapper for all cards */}
+              {filteredContent.map((item, i) => (
+                <CardComponent key={i} item={item} />
+              ))}
+            </div>
 
             {/* Pagination */}
             {pages > 1 && (
