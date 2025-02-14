@@ -73,6 +73,12 @@ const menu_data = [
     has_dropdown: false,
   },
   {
+    id: 6,
+    title: "Notice",
+    link: "/notice",
+    has_dropdown: false,
+  },
+  {
     id: 7,
     title: "Contact Us",
     link: "/contact",
