@@ -39,7 +39,7 @@ const Header = () => {
                         <img src="/assets/img/logo/logo.png" alt="logo" />
                       </Link>
                     </div>
-                    <div className="header-cat-menu ml-40 d-none d-md-block">
+                    {/* <div className="header-cat-menu ml-40 d-none d-md-block">
                       <nav>
                         <ul>
                           <li>
@@ -59,7 +59,7 @@ const Header = () => {
                           </li>
                         </ul>
                       </nav>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-6 d-flex align-items-center justify-content-end">

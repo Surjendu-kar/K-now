@@ -74,7 +74,7 @@ const ChooseArea = () => {
                     </li>
                     <li>
                       <i className="fa-light fa-check"></i>
-                      <p>NAAC Accredited</p>
+                      <p>CBSE Affiliated</p>
                     </li>
                   </ul>
                 </div>

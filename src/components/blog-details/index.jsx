@@ -9,7 +9,6 @@ const BlogDetails = () => {
     <>
       <Breadcrumb title="News Details" subtitle="News Details" isDbbl="News" />
       <PostboxBlogDetails />
-      <CounterArea />
     </>
   );
 };
