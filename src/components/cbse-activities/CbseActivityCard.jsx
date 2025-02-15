@@ -11,7 +11,7 @@ export const CbseActivityCard = ({ item }) => {
         <div className="tpcourse__thumb p-relative w-img fix">
           <Link href={`/cbse-activities/${item.id}`}>
             <img
-              src="/assets/img/course/course-img-05.jpg"
+              src="/assets/img/course/img-6.jpg"
               alt="course-thumb"
             />
           </Link>

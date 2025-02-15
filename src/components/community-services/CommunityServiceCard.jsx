@@ -11,7 +11,7 @@ export const CommunityServiceCard = ({ item }) => {
         <div className="tpcourse__thumb p-relative w-img fix">
           <Link href={`/community-services/${item.id}`}>
             <img
-              src="/assets/img/course/course-sub-thumb-05.jpg"
+              src="/assets/img/course/img-5.jpg"
               alt="course-thumb"
             />
           </Link>
