@@ -49146,7 +49146,7 @@ div.choose-sub-color {
 }
 
 .tpcourse__content-2 {
-  padding: 20px;
+  padding: 15px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 0 0 5px 5px;
 }
@@ -49293,7 +49293,7 @@ div.choose-sub-color {
 }
 
 .courser-list-width {
-  width: 37%;
+  width: 30%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .courser-list-width {

@@ -49,7 +49,7 @@ const NewsArea = () => {
               </div>
             ))}
           </div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-12">
               <div className="blog-btn text-center">
                 <Link
@@ -61,7 +61,7 @@ const NewsArea = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

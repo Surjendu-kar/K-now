@@ -161,10 +161,10 @@
         & a {
           @include transition(0.3s);
           display: block;
-          padding: 13px 18px;
+          padding: 10px 12px;
           background: rgb(255, 102, 82, 0.1);
           border-radius: 5px;
-          font-size: 16px;
+          font-size: 12px;
           color: var(--tp-heading-primary);
           line-height: 1;
           @media #{$xl} {
@@ -261,7 +261,7 @@
   }
 }
 .tp-cours-title-color {
-  font-size: 22px;
+  font-size: 16px;
   margin-left: 0;
   @media #{$xl} {
     font-size: 18px;
@@ -272,14 +272,14 @@
 }
 .tpcourse {
   &__content-2 {
-    padding: 20px;
+    padding: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 0 0 5px 5px;
   }
   &__rating-icon {
     & span {
       color: #f2c94c;
-      font-size: 20px;
+      font-size: 12px;
       font-family: "Gordita-500";
       font-weight: 500;
     }
@@ -294,7 +294,7 @@
     }
   }
   & .price-title {
-    font-size: 20px;
+    font-size: 12px;
     font-family: "Gordita-500";
     font-weight: 400;
     margin-bottom: 0;
@@ -308,7 +308,7 @@
         margin-right: 0px;
       }
       & span {
-        font-size: 17px;
+        font-size: 12px;
         @media #{$xs} {
           font-size: 14px;
         }
@@ -420,13 +420,13 @@
 
 // course-list-area
 .courser-list-width {
-  width: 37%;
+  width: 28%;
   @media #{$md,$xs} {
     width: 100%;
   }
 }
 .course-item-width {
-  width: 60.5%;
+  width: 70.0%;
   @media #{$lg} {
     width: 59.5%;
   }
@@ -480,7 +480,7 @@
   }
   .form-check-label {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Gordita-500";
     color: var(--tp-text-2);
     padding-left: 15px;

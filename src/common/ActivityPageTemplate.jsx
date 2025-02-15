@@ -84,7 +84,7 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
         <div className="row mb-20">
           <div className="col-lg-4 col-md-12 courser-list-width mb-60">
             <div className="course-sidebar">
-              <div className="course-sidebar__widget mb-50">
+              <div className="course-sidebar__widget">
                 <div className="course-sidebar__info c-info-list">
                   <h4 className="course-sidebar__title mb-35">Sort {title}</h4>
                   <CommonSort />
@@ -93,7 +93,7 @@ const ActivityPageTemplate = ({ data, title, CardComponent }) => {
             </div>
           </div>
 
-          <div className="col-lg-8 col-md-12 course-item-width ml-30">
+          <div className="col-lg-8 col-md-12 course-item-width">
             {/* Top Bar */}
             <div className="shop-top-wrap courses-top-wrap mb-30">
               <div className="row align-items-center">

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const SchoolActivityCard = ({ item }) => {
   return (
-    <div className="col-xl-6 col-lg-6 col-md-6">
+    <div className="col-xl-4 col-lg-6 col-md-6">
       <div
         className="tpcourse mb-40 wow fadeInUp"
         data-wow-duration=".8s"

@@ -13,18 +13,18 @@ const HeroBanner = () => {
             <div className="row">
               <div className="col-xl-6 col-lg-6 col-md-8">
                 <div className="hero-content">
-                  <span>Unlock Your Potential with Expert Training</span>
+                  <span>CBSE Affiliated School</span>
                   <h2 className="hero-title mb-35">
                     Education That Shapes <i>Future</i>.
                   </h2>
                   <p>
-                    Transform your career with industry-leading courses designed
-                    <br />
-                    to empower professionals at every level.
+                    Experience quality education with our holistic curriculum,
+                    modern facilities, and experienced teachers dedicated to
+                    bringing out the best in every student.
                   </p>
                   <div className="tp-banner-btn">
-                    <Link href="/course-list" className="tp-btn">
-                      Browse Programs
+                    <Link href="/school-curriculum" className="tp-btn">
+                      Explore Academics
                     </Link>
                   </div>
                 </div>

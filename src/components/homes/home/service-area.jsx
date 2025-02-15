@@ -4,26 +4,26 @@ const feature_content = [
   {
     id: 1,
     icon: "fi fi-rr-graduation-cap",
-    title: "Academic Programs",
-    des: "Comprehensive undergraduate and postgraduate programs with innovative curriculum and experienced faculty.",
+    title: "Academic Excellence",
+    des: "Quality education with dedicated teachers and comprehensive curriculum aligned with national standards.",
   },
   {
     id: 2,
     icon: "fi fi-rr-document",
-    title: "Research Facilities",
-    des: "State-of-the-art laboratories and research centers equipped with modern technology and resources.",
+    title: "Learning Resources",
+    des: "Well-equipped classrooms, science labs, and computer facilities to support hands-on learning.",
   },
   {
     id: 3,
-    icon: "fi fi-rr-computer",
-    title: "Digital Library",
-    des: "24/7 access to extensive digital resources, journals, and research papers for continuous learning.",
+    icon: "fi fi-rr-backpack",
+    title: "Student Activities",
+    des: "Rich variety of extracurricular activities including sports, arts, music, and cultural programs.",
   },
   {
     id: 4,
-    icon: "fi fi-rr-briefcase",
-    title: "Career Services",
-    des: "Dedicated placement cell offering career guidance, industry connections, and placement assistance.",
+    icon: "fi fi-rr-users",
+    title: "Student Support",
+    des: "Dedicated counseling services, academic guidance, and personal development programs.",
   },
 ];
 
