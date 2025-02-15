@@ -50,19 +50,31 @@ const PrincipalsMessageContent = () => {
 
                 <ul className="list-unstyled mb-4">
                   <li className="mb-2">
-                    <i className="fas fa-check-circle text-primary me-2"></i>
+                    <i
+                      className="fas fa-check-circle me-2"
+                      style={{ color: "#245d51" }}
+                    ></i>
                     Academic Excellence through innovative teaching methods
                   </li>
                   <li className="mb-2">
-                    <i className="fas fa-check-circle text-primary me-2"></i>
+                    <i
+                      className="fas fa-check-circle me-2"
+                      style={{ color: "#245d51" }}
+                    ></i>
                     Character Development and value-based education
                   </li>
                   <li className="mb-2">
-                    <i className="fas fa-check-circle text-primary me-2"></i>
+                    <i
+                      className="fas fa-check-circle me-2"
+                      style={{ color: "#245d51" }}
+                    ></i>
                     Physical Education and sports activities
                   </li>
                   <li className="mb-2">
-                    <i className="fas fa-check-circle text-primary me-2"></i>
+                    <i
+                      className="fas fa-check-circle me-2"
+                      style={{ color: "#245d51" }}
+                    ></i>
                     Creative Arts and cultural programs
                   </li>
                 </ul>
