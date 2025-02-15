@@ -23,8 +23,8 @@ const HeroBanner = () => {
                     bringing out the best in every student.
                   </p>
                   <div className="tp-banner-btn">
-                    <Link href="/school-curriculum" className="tp-btn">
-                      Explore Academics
+                    <Link href="/co-curricular-activities" className="tp-btn">
+                      Explore Programs
                     </Link>
                   </div>
                 </div>

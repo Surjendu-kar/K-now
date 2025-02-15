@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 // shape_img data
@@ -42,6 +43,8 @@ const { img_1, img_2, img_3, about_title, sub_title, des, about_btn } =
   about_info;
 
 const AboutArea = () => {
+  const pathname = usePathname();
+  const isOnPrincipalMessage = pathname === "/principal's-message";
   return (
     <>
       <section
@@ -104,11 +107,13 @@ const AboutArea = () => {
                   <h2 className="tp-section-title mb-15">{sub_title}</h2>
                   <p>{des}</p>
                 </div>
-                <div className="about-btn">
-                  <Link href="/principal's-message" className="tp-btn">
-                    {about_btn}
-                  </Link>
-                </div>
+                {!isOnPrincipalMessage && (
+                  <div className="about-btn">
+                    <Link href="/principal's-message" className="tp-btn">
+                      {about_btn}
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>

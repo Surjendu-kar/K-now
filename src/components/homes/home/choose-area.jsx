@@ -87,7 +87,11 @@ const ChooseArea = () => {
                   <h2 className="tp-section-title mb-20">{sub_title}</h2>
 
                   <div
-                    style={{ display: "flex", flexDirection: "column", gap: '30px' }}
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "30px",
+                    }}
                   >
                     {/* Vision Section */}
                     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -110,11 +114,6 @@ const ChooseArea = () => {
                       </li>
                     ))}
                   </ul>
-                </div>
-                <div className="choose-btn">
-                  <Link href="/about" className="tp-btn">
-                    Explore Courses
-                  </Link>
                 </div>
               </div>
             </div>
