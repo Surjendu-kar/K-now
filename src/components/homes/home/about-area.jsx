@@ -35,7 +35,7 @@ const about_info = {
       individuals ready for tomorrow's challenges.
     </>
   ),
-  about_btn: "Learn More",
+  about_btn: "Read Full Message",
 };
 
 const { img_1, img_2, img_3, about_title, sub_title, des, about_btn } =
@@ -105,7 +105,7 @@ const AboutArea = () => {
                   <p>{des}</p>
                 </div>
                 <div className="about-btn">
-                  <Link href="/about" className="tp-btn">
+                  <Link href="/principal's-message" className="tp-btn">
                     {about_btn}
                   </Link>
                 </div>
