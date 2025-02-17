@@ -1,0 +1,52 @@
+{
+  "schoolCurriculum": [
+    {
+      "id": 1,
+      "icon": "/assets/img/category/category-01.png",
+      "name": "Pre-Primary",
+      "courses": "Nursery to KG"
+    },
+    {
+      "id": 2,
+      "icon": "/assets/img/category/category-02.png",
+      "name": "Primary",
+      "courses": "Class 1 to 5"
+    },
+    {
+      "id": 3,
+      "icon": "/assets/img/category/category-03.png",
+      "name": "Middle School",
+      "courses": "Class 6 to 8"
+    },
+    {
+      "id": 4,
+      "icon": "/assets/img/category/category-04.png",
+      "name": "Secondary",
+      "courses": "Class 9 & 10"
+    },
+    {
+      "id": 5,
+      "icon": "/assets/img/category/category-05.png",
+      "name": "Senior Secondary",
+      "courses": "Class 11 & 12"
+    },
+    {
+      "id": 6,
+      "icon": "/assets/img/category/category-06.png",
+      "name": "Science Stream",
+      "courses": "PCM/PCB"
+    },
+    {
+      "id": 7,
+      "icon": "/assets/img/category/category-07.png",
+      "name": "Commerce",
+      "courses": "With/Without Maths"
+    },
+    {
+      "id": 8,
+      "icon": "/assets/img/category/category-08.png",
+      "name": "Humanities",
+      "courses": "Arts Stream"
+    }
+  ]
+}
