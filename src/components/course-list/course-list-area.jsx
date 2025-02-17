@@ -2,7 +2,7 @@ import course_list_data from "@/src/data/course-list-data";
 import Link from "next/link";
 import React from "react";
 
-const  CourseListArea = () => {
+const CourseListArea = () => {
   return (
     <>
       <section
@@ -286,18 +286,7 @@ const  CourseListArea = () => {
                         <div className="tpcourse__category mb-10">
                           <ul className="tpcourse__price-list d-flex align-items-center">
                             <li>
-                              <Link
-                                className={item.ct_color}
-                                href="/course-details"
-                              >
-                                {item.course_title}
-                              </Link>
-                            </li>
-                            <li>
-                              <Link
-                                className={item.cn_color}
-                                href="/course-details"
-                              >
+                              <Link className={item.cn_color} href="#">
                                 {item.course_name}
                               </Link>
                             </li>
@@ -305,42 +294,8 @@ const  CourseListArea = () => {
                         </div>
                         <div className="tpcourse__ava-title mb-15">
                           <h4 className="tpcourse__title tp-cours-title-color">
-                            <Link href="/course-details">
-                              {item.title}
-                            </Link>
+                            <Link href="/course-details">{item.title}</Link>
                           </h4>
-                        </div>
-                        <div className="tpcourse__meta tpcourse__meta-gap pb-15 mb-15">
-                          <ul className="d-flex align-items-center">
-                            <li>
-                              <img
-                                src="/assets/img/icon/c-meta-01.png"
-                                alt="meta-icon"
-                              />
-                              <span>35 Classes</span>
-                            </li>
-                            <li>
-                              <img
-                                src="/assets/img/icon/c-meta-02.png"
-                                alt="meta-icon"
-                              />
-                              <span>291 Students</span>
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="tpcourse__rating d-flex align-items-center justify-content-between">
-                          <div className="tpcourse__rating-icon">
-                            <span>4.7</span>
-                            <i className="fi fi-ss-star"></i>
-                            <i className="fi fi-ss-star"></i>
-                            <i className="fi fi-ss-star"></i>
-                            <i className="fi fi-ss-star"></i>
-                            <i className="fi fi-rs-star"></i>
-                            <p>(125)</p>
-                          </div>
-                          <div className="tpcourse__pricing">
-                            <h5 className="price-title">$29.99</h5>
-                          </div>
                         </div>
                       </div>
                     </div>
