@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 
+const ImageLoader = () => (
+  <div className="animate-pulse">
+    <div className="bg-gray-200 rounded-lg h-64 w-full"></div>
+  </div>
+);
+
 const GalleryArea = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [loadingStates, setLoadingStates] = useState({});
 
   const galleryImages = [
     {
@@ -95,11 +102,20 @@ const GalleryArea = () => {
                 style={{ cursor: "pointer" }}
                 onClick={() => handleImageClick(image)}
               >
+                {loadingStates[image.id] && <ImageLoader />}
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="img-fluid w-100"
+                  className={`img-fluid w-100 ${
+                    loadingStates[image.id] ? "opacity-0" : "opacity-100"
+                  }`}
                   style={{ height: "300px", objectFit: "cover" }}
+                  onLoad={() => {
+                    setLoadingStates((prev) => ({
+                      ...prev,
+                      [image.id]: false,
+                    }));
+                  }}
                 />
                 <div className="gallery-overlay position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
                   <span className="gallery-icon">
