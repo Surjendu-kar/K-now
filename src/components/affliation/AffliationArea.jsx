@@ -1,6 +1,7 @@
 import React from "react";
-import { affiliationData } from "@/src/data/affiliation.json";
 import TableComponent from "@/src/common/TableComponent";
+import affiliationDataFile from "@/src/data/affiliation.json";
+const { affiliationData } = affiliationDataFile;
 
 function AffiliationArea() {
   const headerItems = [

@@ -1,5 +1,6 @@
 import React from "react";
-import { enrollmentData } from "@/src/data/student_enrol.json";
+import studentEnrollmentData from "@/src/data/student_enrol.json";
+const { enrollmentData } = studentEnrollmentData;
 import TableComponent from "@/src/common/TableComponent";
 
 function StudentEnrolArea() {

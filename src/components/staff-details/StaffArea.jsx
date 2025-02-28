@@ -1,6 +1,7 @@
 import React from "react";
-import { staffMembers } from "@/src/data/staff_data.json";
 import Link from "next/link";
+import staffData from "@/src/data/staff_data.json";
+const { staffMembers } = staffData;
 
 function StaffArea() {
   return (

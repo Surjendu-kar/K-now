@@ -17,6 +17,7 @@ export const FormInput = ({
       value={value}
       onChange={onChange}
       required={required}
+      className="form-control"
     />
   </div>
 );
@@ -56,21 +57,25 @@ export const FormSelect = ({
   required,
   value,
   onChange,
-}) => (
-  <div className="country-select">
-    <label>
-      {placeholder} {required && <span className="required">*</span>}
-    </label>
-    <select name={name} value={value} onChange={onChange} required={required}>
-      <option value="">{placeholder}</option>
-      {options.map((option) => (
-        <option key={option.value} value={option.value}>
-          {option.label}
-        </option>
-      ))}
-    </select>
-  </div>
-);
+}) => {
+  const fieldName = placeholder.replace(" *", "");
+
+  return (
+    <div className="country-select">
+      <label>
+        {placeholder} {required && <span className="required">*</span>}
+      </label>
+      <select name={name} value={value} onChange={onChange} required={required}>
+        <option value="" disabled hidden>{`Select ${fieldName}`}</option>
+        {options.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
 
 // RadioGroup Component
 export const RadioGroup = ({ question, name, onChange, value }) => (

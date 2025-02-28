@@ -1,5 +1,6 @@
 import React from "react";
-import { schoolCurriculum } from "@/src/data/school_curriculum.json";
+import schoolCurriculumData from "@/src/data/school_curriculum.json";
+const { schoolCurriculum } = schoolCurriculumData;
 import Link from "next/link";
 
 function SchoolCurriculumArea() {

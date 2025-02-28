@@ -75,7 +75,7 @@ const social_links = [
 const copyright = {
   logo: "/assets/img/logo/logo.png",
   copyright_text: (
-    <>Copyright © Uxaction {new Date().getFullYear()}, All Rights Reserved</>
+    <>Copyright © {new Date().getFullYear()} Iqnaut, All Rights Reserved</>
   ),
 };
 
@@ -147,7 +147,7 @@ const Footer = () => {
                 <div className="col-md-5">
                   <div className="f-copyright__logo mb-30">
                     <a href="#">
-                      <img src={logo} alt="logo" />
+                      <img src={logo} alt="logo" style={{ filter: "brightness(0) invert(1)" }} />
                     </a>
                   </div>
                 </div>

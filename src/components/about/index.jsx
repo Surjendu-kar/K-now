@@ -1,9 +1,11 @@
 import React from "react";
 import Breadcrumb from "../bredcrumb/breadcrumb";
-import { staffMembers } from "@/src/data/staff_data.json";
 import Link from "next/link";
 import ChooseArea from "../homes/home/choose-area";
-import { committeeMembers } from "@/src/data/committee_members.json";
+import staffData from "@/src/data/staff_data.json";
+const { staffMembers } = staffData;
+import committeeData from "@/src/data/committee_members.json";
+const { committeeMembers } = committeeData;
 
 const About = () => {
   const topStaff = staffMembers.slice(0, 3);

@@ -1,5 +1,6 @@
 import React from "react";
-import { listOfBooksData } from "@/src/data/listOfBooks_data.json";
+import booksData from "@/src/data/listOfBooks_data.json";
+const { listOfBooksData } = booksData;
 
 function ListOfBooksArea() {
   return (

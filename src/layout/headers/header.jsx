@@ -36,7 +36,11 @@ const Header = () => {
                   <div className="logo-area d-flex align-items-center">
                     <div className="logo">
                       <Link href="/">
-                        <img src="/assets/img/logo/logo.png" alt="logo" />
+                        <img
+                          src="/assets/img/logo/logo.png"
+                          alt="logo"
+                          style={{ filter: "brightness(0) invert(1)" }}
+                        />
                       </Link>
                     </div>
                     {/* <div className="header-cat-menu ml-40 d-none d-md-block">

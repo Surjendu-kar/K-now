@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { holidaysData } from "@/src/data/holidays_data.json";
+import holidayData from "@/src/data/holidays_data.json";
+const { holidaysData } = holidayData;
 
 function HolidaysListArea() {
   const [isActive, setIsActive] = useState({

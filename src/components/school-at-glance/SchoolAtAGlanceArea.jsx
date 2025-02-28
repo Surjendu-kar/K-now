@@ -20,7 +20,7 @@ function SchoolAtAGlanceArea() {
         </>
       ),
       des: <>Well-maintained classrooms with proper seating and blackboards</>,
-      img: "/assets/img/infrastucture/img-1.jpg",
+      img: "/assets/img/infrastucture/img-7.jpeg",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ function SchoolAtAGlanceArea() {
         </>
       ),
       des: <>School library with collection of books and study materials</>,
-      img: "/assets/img/infrastucture/img-2.jpeg",
+      img: "/assets/img/infrastucture/img-8.jpg",
     },
     {
       id: 4,
@@ -50,7 +50,7 @@ function SchoolAtAGlanceArea() {
         </>
       ),
       des: <>Activity room for art, craft, and music classes</>,
-      img: "/assets/img/infrastucture/img-4.jpg",
+      img: "/assets/img/infrastucture/img-9.jpg",
     },
     {
       id: 6,

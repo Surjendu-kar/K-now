@@ -1,6 +1,7 @@
 import React from "react";
-import { committeeMembers } from "@/src/data/committee_members.json";
 import Link from "next/link";
+import committeeData from "@/src/data/committee_members.json";
+const { committeeMembers } = committeeData;
 
 function SchoolComitteArea() {
   return (

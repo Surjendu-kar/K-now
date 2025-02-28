@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "school-management-dce3c"
+  },
+  "targets": {
+    "school-management-dce3c": {
+      "hosting": {
+        "e-pora": [
+          "epora-iqnaut"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
