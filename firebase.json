@@ -12,7 +12,7 @@
       ]
     },
     {
-      "target": "e-pora",
+      "target": "k-now",
       "public": "out",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "headers": [
