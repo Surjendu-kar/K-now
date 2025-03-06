@@ -42,7 +42,6 @@ const footer_data = [
   },
 ];
 
-
 // social_links
 const social_links = [
   {
@@ -75,7 +74,10 @@ const social_links = [
 const copyright = {
   logo: "/assets/img/logo/logo.png",
   copyright_text: (
-    <>Copyright © {new Date().getFullYear()} Iqnaut, All Rights Reserved</>
+    <>
+      Copyright © {new Date().getFullYear()}{" "}
+      <a href="https://iqnaut.com/">Iqnaut</a>, All Rights Reserved
+    </>
   ),
 };
 
@@ -119,7 +121,7 @@ const Footer = () => {
                       events. Unsubscribe whenever you like.
                     </p>
                     <div className="footer-widget__f-newsletter mb-40">
-                      <form  onSubmit={(e) => e.preventDefault()}>
+                      <form onSubmit={(e) => e.preventDefault()}>
                         <span>
                           <i className="icon_mail_alt"></i>
                         </span>
@@ -147,7 +149,11 @@ const Footer = () => {
                 <div className="col-md-5">
                   <div className="f-copyright__logo mb-30">
                     <a href="#">
-                      <img src={logo} alt="logo" style={{ filter: "brightness(0) invert(1)" }} />
+                      <img
+                        src={logo}
+                        alt="logo"
+                        style={{ filter: "brightness(0) invert(1)" }}
+                      />
                     </a>
                   </div>
                 </div>
